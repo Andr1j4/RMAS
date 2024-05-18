@@ -1,0 +1,63 @@
+Aplikacija za deljenje lokacije i sadržaja sa prijateljima
+
+Pregled:
+Aplikacija za deljenje lokacije i sadržaja omogućava korisnicima da se povežu sa prijateljima, dele svoju trenutnu lokaciju, 
+slike sa lokacije i razmenjuju poruke u realnom vremenu. Korisnici se mogu prijaviti ili registrovati, dodavati prijatelje kako bi delili svoju lokaciju
+i komunicirali sa njima. Korišćenjem servisa i live update funkcionalnosti, korisnicima se pruža kontinuirano praćenje lokacije prijatelja i 
+ažuriranje sadržaja u bazi podataka.
+
+Ključne funkcije:
+- Autentifikacija korisnika:
+	Prijava/Registracija: Omogućava korisnicima da se prijave ili kreiraju nalog koristeći email i lozinku.
+	Tehnologije: Firebase Authentication.
+- Dodavanje prijatelja:
+	Upravljanje listom prijatelja: Korisnici mogu da dodaju, uklone ili upravljaju listom prijatelja kako bi delili lokaciju i sadržaj.
+	Tehnologije: Firebase Firestore za skladištenje listi prijatelja.
+- Deljenje lokacije i sadržaja:
+	Trenutna lokacija: Omogućava korisnicima da podele svoju trenutnu lokaciju sa odabranim prijateljima.
+	Deljenje slika: Korisnici mogu da šalju slike sa trenutne lokacije svojim prijateljima.
+	Razmena poruka: Omogućava korisnicima da komuniciraju i razmenjuju poruke u realnom vremenu.
+	Tehnologije: Firebase Firestore za skladištenje lokacije i sadržaja, Firebase Cloud Messaging za slanje poruka.
+- Korišćenje mape:
+	Prikaz lokacije na mapi: Korisnicima se omogućava da vide lokaciju prijatelja na mapi.
+	Interaktivna mapa: Omogućava korisnicima da interaktivno istražuju lokaciju i okolinu.
+	Tehnologije: Google Maps SDK.
+- Servisi i live update podataka:
+	Kontinuirano praćenje lokacije: Korišćenje Android servisa za kontinuirano praćenje lokacije korisnika i prijatelja čak i kada je aplikacija u pozadini.
+	Live update sadržaja: Automatsko ažuriranje sadržaja u bazi podataka i prikazivanje novih informacija korisnicima u realnom vremenu.
+	Tehnologije: Android Background Services, Firebase Firestore za real-time ažuriranje podataka.
+
+Koraci za implementaciju:
+- Postavljanje Firebase-a:
+	Kreiranje Firebase projekta i konfigurisanje Firebase Authentication i Firestore.
+	Dodavanje Firebase zavisnosti u Android projekat.
+- Autentifikacija korisnika:
+	Implementacija funkcionalnosti za registraciju i prijavu korisnika koristeći Firebase Authentication.
+	Kreiranje korisničkog interfejsa za ekran prijave i registracije.
+- Dodavanje prijatelja:
+	Implementacija funkcionalnosti za dodavanje i upravljanje listom prijatelja.
+	Korišćenje Firebase Firestore-a za skladištenje i ažuriranje listi prijatelja.
+- Deljenje lokacije i sadržaja:
+	Implementacija funkcionalnosti za deljenje trenutne lokacije i slanje slika sa trenutne lokacije.
+	Korišćenje Firebase Firestore-a za skladištenje lokacije i sadržaja, Firebase Cloud Messaging za slanje poruka.
+- Korišćenje mape:
+	Integracija Google Maps SDK-a u aplikaciju za prikaz lokacije prijatelja na mapi.
+	Implementacija interaktivne mape za istraživanje lokacija.
+- Servisi i live update podataka:
+	Implementacija Android Background Services-a za kontinuirano praćenje lokacije korisnika i prijatelja.
+	Korišćenje Firebase Firestore-a za real-time ažuriranje podataka i prikazivanje novih informacija korisnicima u realnom vremenu.
+
+- Tehnologije i alati:
+	- Firebase: Authentication, Firestore (za real-time bazu podataka), Cloud Messaging (za obaveštenja)
+	- Google Maps SDK: Za prikaz mape i lokacija
+	- Android Background Services: Za kontinuirano praćenje lokacije i live update podataka
+	- Android Studio: IDE za razvoj
+	- Kotlin/Java: Programski jezik za Android razvoj
+
+- Poboljšanja
+	- Ograničenje privatnosti lokacije: Dodavanje opcija za korisnike da odrede ko može videti njihovu lokaciju i kada.
+	- Grupno deljenje lokacije: Omogućavanje korisnicima da dele lokaciju sa više prijatelja istovremeno.
+	- Integracija sa društvenim medijima: Omogućavanje deljenja lokacije i sadržaja putem društvenih medija.
+	- Planiranje susreta: Integracija funkcionalnosti za planiranje susreta na osnovu lokacije korisnika i prijatelja.
+	- Ova aplikacija omogućava korisnicima da jednostavno dele svoju lokaciju, slike i poruke sa prijateljima, 
+	  koristeći Android servise za kontinuirano praćenje lokacije i ažuriranje podataka u realnom vremenu.
